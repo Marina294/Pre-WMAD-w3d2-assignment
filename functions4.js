@@ -4,9 +4,15 @@
 
 let example = [1, 'dog', 3, 'eight', 5, 'car', 7, 8];
 
-const logStringsAndNumbers = function () {
-
-};
+const logStringsAndNumbers = function (arr) {
+    arr.forEach(element => {
+        if(isNaN(element)){
+            console.log("this is a string");
+        } else 
+        {
+            console.log(element);
+        }
+    })}
 
 logStringsAndNumbers(example);
 
